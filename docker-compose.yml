@@ -9,7 +9,6 @@ services:
       - redis
 
   redis:
-    condition: service_healthy
     image: redis
     ports:
       - 6379
