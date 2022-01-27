@@ -1,0 +1,10 @@
+name: item-service-v2
+image: okteto/gradle:6.5
+command: gradle bootRun
+volumes:
+  - /home/gradle/.gradle
+sync:
+- .:/usr/src/app
+forward:
+- 5005:5005
+- 8080:8080

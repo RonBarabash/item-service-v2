@@ -1,0 +1,8 @@
+com/okteto/items/controller/ItemController.java
+ com.okteto.items.controller.ItemController
+com/okteto/items/Application.java
+ com.okteto.items.Application
+com/okteto/items/repo/ItemRepository.java
+ com.okteto.items.repo.ItemRepository
+com/okteto/items/model/Item.java
+ com.okteto.items.model.Item

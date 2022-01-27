@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  item-service-v2:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - redis
+
+  redis:
+    condition: service_healthy
+    image: redis
+    ports:
+      - 6379
+    volumes:
+      - redis:/data
+
+volumes:
+  redis:
