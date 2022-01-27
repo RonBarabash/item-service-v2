@@ -6,9 +6,9 @@ services:
     ports:
       - 8080:8080
     depends_on:
-      - redis
+      - redisv2
 
-  redis:
+  redisv2:
     image: redis
     ports:
       - 6379
