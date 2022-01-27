@@ -1,6 +1,6 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - okteto pipeline deploy -r java-gradle-getting-started --wait
-  - okteto pipeline deploy -r java-gradle-getting-started --wait
+  - okteto pipeline deploy -r https://github.com/RonBarabash/item-service --wait
+  - okteto stack deploy
 devs:
   - /Users/rbarabash/Workspace/vscode/item-service/okteto.yml
